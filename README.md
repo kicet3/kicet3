@@ -1,7 +1,7 @@
 # 안녕하세요! 👋 저는 이현대 입니다
 
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&pause=1000&color=36BCF7FF&center=true&vCenter=true&width=600&lines=%EA%B0%9C%EC%B5%9C%EC%9E%90+%7C+Developer;%EC%B0%BD%EC%9D%98%EC%A0%81+%EB%AC%B8%EC%A0%9C+%ED%95%B4%EA%B2%B0%EC%82%AC+%7C+Problem+Solver;%ED%95%AD%EC%83%81+%EB%B0%B0%EC%9A%B0%EB%8A%94+%ED%95%99%EC%8A%B5%EC%9E%90+%7C+Lifelong+Learner" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&pause=1000&color=36BCF7FF&center=true&vCenter=true&width=600&lines=%ED%92%80%EC%8A%A4%ED%83%9D+%EA%B0%9C%EB%B0%9C%EC%9E%90+%7C+Full+Stack+Developer;%EC%B0%BD%EC%9D%98%EC%A0%81+%EB%AC%B8%EC%A0%9C+%ED%95%B4%EA%B2%B0%EC%82%AC+%7C+Problem+Solver;%ED%95%AD%EC%83%81+%EB%B0%B0%EC%9A%B0%EB%8A%94+%ED%95%99%EC%8A%B5%EC%9E%90+%7C+Lifelong+Learner" alt="Typing SVG" />
 </div>
 
 ## 🚀 About Me
@@ -46,6 +46,8 @@
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 ![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white)
 ![GCP](https://img.shields.io/badge/GCP-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)
+![Slack](https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white)
+![Jira](https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white)
 
 
 ---
@@ -104,7 +106,8 @@
 ---
 ## 🎯 2025년 목표
 
-- [ ] AI 서비스 개발에 대한 프로젝트 경험 쌓기
+- [ ] AI를 활용한 프로젝트 진행하기
+- [ ] 프로젝트 진행 시 매니징 경험 쌓기
 - [ ] 개인 블로그 운영하며 기술 포스팅 20개 작성하기
 - [ ] 새로운 프레임워크/라이브러리 학습하기
 - [ ] 개발 컨퍼런스 참석 및 네트워킹
