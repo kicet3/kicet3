@@ -1,0 +1,38 @@
+name: Update Daily Quote
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # 매일 자정에 실행
+  workflow_dispatch:  # 수동 실행도 가능
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+          
+      - name: Update README with random quote
+        run: |
+          python -c "
+          import random
+          with open('quotes.txt', 'r', encoding='utf-8') as f:
+              quotes = f.readlines()
+          quote = random.choice(quotes).strip()
+          with open('README.md', 'r', encoding='utf-8') as f:
+              content = f.read()
+          new_content = content.replace('*"비즈니스에서 위대한 일은 한 사람에 의해 이루어지지 않는다. 그것은 팀으로 이루어진다."*', f'*{quote}*')
+          with open('README.md', 'w', encoding='utf-8') as f:
+              f.write(new_content)
+          "
+          
+      - name: Commit and push if changed
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add README.md
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update daily quote" && git push) 
