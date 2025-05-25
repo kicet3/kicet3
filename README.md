@@ -1,7 +1,7 @@
 <div align="center">
-  ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=kicet3&theme=dark&show_icons=true)
+  
 </div>
-
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=kicet3&theme=dark&show_icons=true)
 <!--내용 부분-->
 <h3 align="center">✨ Tech Stack ✨</h3>
 <div align="center">
