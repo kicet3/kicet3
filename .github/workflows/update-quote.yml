@@ -20,12 +20,30 @@ jobs:
         run: |
           python -c "
           import random
+
           with open('quotes.txt', 'r', encoding='utf-8') as f:
-              quotes = f.readlines()
-          quote = random.choice(quotes).strip()
+              quotes = [q.strip() for q in f.readlines()]
+
           with open('README.md', 'r', encoding='utf-8') as f:
               content = f.read()
-          new_content = content.replace('비즈니스에서 위대한 일은 한 사람에 의해 이루어지지 않는다. 그것은 팀으로 이루어진다.', f'{quote}')
+
+          # quotes.txt에 있는 명언들 중 README에 현재 있는 것 찾기
+          current_quote = None
+          for quote in quotes:
+              if quote in content:
+                  current_quote = quote
+                  break
+
+          if current_quote:
+              # 현재 명언을 새로운 명언으로 교체
+              new_quote = random.choice([q for q in quotes if q != current_quote])
+              new_content = content.replace(current_quote, new_quote)
+          else:
+              # 첫 실행이거나 quotes에 없는 명언이 있을 경우
+              # 기본 명언을 찾아서 교체하거나 새로운 명언 추가
+              new_quote = random.choice(quotes)
+              new_content = content.replace('비즈니스에서 위대한 일은 한 사람에 의해 이루어지지 않는다. 그것은 팀으로 이루어진다.', new_quote)
+
           with open('README.md', 'w', encoding='utf-8') as f:
               f.write(new_content)
           "
