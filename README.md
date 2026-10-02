@@ -21,6 +21,7 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)
+![Swift](https://img.shields.io/badge/Swift-F05138?style=for-the-badge&logo=swift&logoColor=white)
 
 ### AI / LLM
 
@@ -30,6 +31,7 @@
 ![LoRA](https://img.shields.io/badge/LoRA-405DE6?style=for-the-badge)
 ![vLLM](https://img.shields.io/badge/vLLM-ED6A5A?style=for-the-badge)
 ![OpenAI API](https://img.shields.io/badge/OpenAI_API-412991?style=for-the-badge)
+![MCP](https://img.shields.io/badge/MCP-181818?style=for-the-badge)
 
 ### 프론트엔드 & 앱
 
@@ -93,6 +95,20 @@
 
 ## 🏆 주요 프로젝트
 
+### 🎞️ [Framepick]
+
+**프로젝트 구분**: 개인 프로젝트<br>
+**사용 기술**: Swift · SwiftUI · AVFoundation · Core Image<br>
+**프로젝트 설명**: 사진 선별과 영상 프레임 추출을 위한 macOS 앱
+
+- ✨ 사진의 별점·즐겨찾기·제외 상태를 관리하고, 나란히 확대 비교하며 선별한 사진을 AirDrop으로 공유하는 흐름을 구현했습니다.
+- ✨ 영상의 실제 프레임 시각을 색인하고, 선택한 프레임을 원본 해상도의 PNG·JPEG로 추출하도록 구성했습니다.
+- ✨ 원본을 보존하는 보정 사본 저장·일괄 보정과 사진·프레임 목록의 연속 스크롤 로딩을 구현했습니다.
+
+🔗 [GitHub](https://github.com/kicet3/vedio_selector)
+
+---
+
 ### 🤖 [AI 인재 평가 플랫폼]
 
 **프로젝트 구분**: 개인 프로젝트<br>
@@ -114,6 +130,9 @@
 - ✨ 텍스트 대화와 WebRTC 음성 회화를 연결하고, 연결 상태·시간 초과·종료 시 자원 정리를 처리했습니다.
 - ✨ 역할·메뉴·가격·학습 목표를 구조화한 시나리오를 화면과 AI 튜터 지시에 공통 적용했습니다.
 - ✨ 대화와 별도 AI 코칭 스레드를 구성해 교정·설명·대체 표현을 제공하고, 학습 기록과 피드백을 SQLite에 저장했습니다.
+- ✨ 개인 아바타의 이미지 업로드·생성·선택과 로컬 저장 기능을 추가했습니다.
+
+🔗 [GitHub](https://github.com/kicet3/Mora)
 
 ---
 
@@ -129,25 +148,67 @@
 
 ---
 
+### 🔎 [CodeGraph MCP]
+
+**프로젝트 구분**: 개인 개발 도구<br>
+**사용 기술**: TypeScript · Node.js · MCP SDK · Neo4j · Zod<br>
+**프로젝트 설명**: 저장소의 코드 구조를 검색·탐색하는 MCP 서버
+
+- ✨ 파일에서 심볼·import·참조 정보를 패턴 기반으로 추출하고, 파일과 심볼 사이의 관계를 Neo4j 그래프로 색인했습니다.
+- ✨ 저장소 등록, 코드 검색, 파일·심볼 문맥 조회, 관계 탐색과 변경 영향 후보 조회 기능을 MCP 도구로 제공했습니다.
+- ✨ `.gitignore`와 파일 크기 제한을 색인에 적용하고, Git 브랜치·커밋 정보를 함께 저장했습니다.
+
+---
+
 ### 📣 [AIMEX]
 
-**프로젝트 구분**: SK Networks AI Camp 최종 팀 프로젝트 · 팀 리드<br>
+**프로젝트 구분**: SK Networks AI Camp 최종 팀 프로젝트 · 팀 리드 / 후속 개인 개발<br>
 **사용 기술**: Python · FastAPI · LoRA · vLLM · ComfyUI · Next.js<br>
 **프로젝트 설명**: 마케팅 자동화 AI 서비스
 
 - ✨ EXAONE 3.5 2.4B의 LoRA 파인튜닝과 vLLM 서빙으로 특정 어투·사투리에 맞춰 응답하는 모델을 구성했습니다.
 - ✨ ComfyUI 기반 마케팅 이미지·영상 생성과 Instagram API 기반 DM 응답 자동화를 서비스에 연동했습니다.
+- ✨ 후속 개발에서 Instagram 댓글·DM 웹훅, 규칙 기반 자동 응답과 대화 이력 처리를 확장했습니다.
+
+🔗 [초기 백엔드 코드](https://github.com/kicet3/AIMEX-back)
 
 ---
 
 ### 📱 [StepOn]
 
 **프로젝트 구분**: AI Camp 협업 프로젝트<br>
-**사용 기술**: Next.js · TypeScript · FastAPI · Python · Prisma<br>
+**사용 기술**: Next.js · TypeScript · FastAPI · Python · Prisma · Supabase · PostgreSQL<br>
 **프로젝트 설명**: AI 기반 자격증 시험 CBT 서비스
 
 - ✨ 수강생을 모아 온라인 CBT 서비스를 개발하고, 부트캠프 전 기수 수강생에게 배포했습니다.
 - ✨ 자격증 문제 풀이와 LLM 기반 관리자 전용 해설 생성 기능을 구현했습니다.
+- ✨ 후속 개발에서 프론트엔드·백엔드를 모노레포로 통합하고, Supabase·PostgreSQL 연동과 해설 승인·반려 흐름을 구성했습니다.
+
+---
+
+### 🏛️ [Civilization LLM Game]
+
+**프로젝트 구분**: LLM 실습 · 게임 프로토타입<br>
+**사용 기술**: Next.js · TypeScript · FastAPI · LangChain · Ollama · WebSocket<br>
+**프로젝트 설명**: 문명 전략 게임에 LLM 외교 대화를 접목한 실습 프로젝트
+
+- ✨ 문명별 특성과 최근 대화 이력을 입력으로 활용하는 외교 대화를 LangChain·Ollama로 구성하고, WebSocket으로 연결했습니다.
+- ✨ 육각형 지도와 도시·유닛·기술 화면, 턴 진행·도시 관리·연구 API를 구현하며 게임 UI와 백엔드의 연결을 실습했습니다.
+
+🔗 [프론트엔드](https://github.com/kicet3/civilization_front) · [백엔드](https://github.com/kicet3/civilization_backend)
+
+---
+
+### 🍱 [SKN Discord Bot]
+
+**프로젝트 구분**: AI Camp 생활 편의 도구<br>
+**사용 기술**: Python · discord.py · Playwright · aiohttp<br>
+**프로젝트 설명**: 교육장 식단 이미지를 조회하는 Discord 봇
+
+- ✨ Playwright로 카카오 채널의 최신 식단 게시물 이미지를 수집하고, Discord 명령으로 조회·전송하도록 구현했습니다.
+- ✨ 점심·석식 명령과 석식 조회 시간대를 구분하고, 비동기 이미지 다운로드를 연결했습니다.
+
+🔗 [GitHub](https://github.com/kicet3/SKN_DISCORD_BOT)
 
 ---
 
@@ -208,11 +269,25 @@
 
 - 🎓 **순천향대학교 정보보호학과 학사** · 2017.03 ~ 2023.02
 - 🤖 **SK Networks AI Camp · AI 엔지니어링 심화 과정** · 2025.02 ~ 2025.08
+- 🔐 **목포대학교 정보보호영재교육원 · 고등전문 I·B 과정 수료** · 2014 ~ 2015
+- 💻 **Microsoft ImagineCamps · #WeSpeakCode 수료**
 
-### 🏅 수상 및 대회
+### 🏅 수상
 
 - 🥇 **DACON 프롬프트 콘테스트 K intelligence 해커톤 2025 · 1위** · 2025.09.21
+- 🏅 **KISBIC 정보보호 아이디어 공모전 · 체험수기(주니어) 부문 장려상** · 한국정보기술연구원 · 2016.03.23
+- 🥉 **글로벌 역사문화 탐방 캠프 보고서 작성대회 · 동상(3위)** · 해남고등학교 · 2016.02.05
+- 🥇 **과제연구발표대회 · 금상(1위, 팀 수상)** · 해남고등학교 · 2015.12.28
+- 🥈 **정보보호영재교육원 정보보안 경진대회 · 고등부 은상(팀 수상)** · 교육부 주최 · 2015.11.21
+- 🥈 **정보보호영재교육원 해킹경진대회 · 고등전문 B 과정 2위** · 목포대학교 · 2015.11.21
+- 🥇 **과학·수학 페스티벌 · 금상(1위)** · 해남고등학교 · 2015.07.27
+- 🥇 **교내 발명품 아이디어 대회 · 금상(1위)** · 해남고등학교 · 2015.05.26
+- 🏅 **정보보호영재교육원 체험수기 공모전 · 최우수상** · 목포대학교 · 2015.01.24
+
+### 🏆 대회 활동
+
 - 🏆 **KT K-Intelligence 해커톤 · 문화유산 AI 에이전트** · 예선 2위 / 본선 6위 · 2025
+- 🔐 **정보보호 영재교육원 4개 통합 해킹대회 · 본선 진출** · 2015
 
 ---
 
